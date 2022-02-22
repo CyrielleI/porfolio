@@ -1,0 +1,226 @@
+$primary: #fb5d55;
+$blue1: #1e2233;
+$blue2: #24273d;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+$heading-font: 'Poppins', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $heading-font;
+}
+
+h1 {
+    color: $primary;
+}
+
+h2 {
+    color: white;
+    margin-top: 0;
+}
+
+h3 {
+    color: $primary;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.section1 {
+    background-color: $blue1;
+    padding: 80px 0;
+    .container {
+        display: grid;
+        grid-template-columns: repeat (1fr, 2fr);
+        gap: 30px;
+        width: 1140px;
+        margin: 0 auto;
+        .pb {
+            grid-column-start: 1;
+            width: 1fr;
+            padding: 7px;
+            box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.7);
+            border-radius: 5px;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }   
+        }
+        .right {
+            grid-column-start: 2;
+            padding: 30px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            button {
+                border: solid 1px $primary;
+                background: $blue1;
+                width: 30%;
+                border-radius: 5px;
+                height: 30px;
+                transition: all ease-in-out 0.3s;
+                &:hover {
+                    border: none;
+                    background: $primary;
+                    color: white;
+                }
+            }
+            p {
+                text-align: justify;
+            }
+            .infos {
+                border: solid 1px $primary;
+                margin: 5px 0 20px;
+                display: flex;
+                padding: 30px;
+                ul {
+                    padding: 0;
+                    width: 50%;
+                    li {
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section2 {
+    background-color: $blue2;
+    .container {
+        display: grid;
+        grid-template-columns: repeat (1fr, 2fr);
+        width: 1140px;
+        margin: 0 auto;
+    }
+    .articles{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        color: white;
+        gap: 30px;
+        article {
+            border-radius: 3px;
+            border : 1px solid $primary;
+            text-align: justify;
+            padding: 10px;
+            margin-bottom: 30px;
+            i {
+                color: $primary;
+            }
+        }
+    }
+}
+
+button {
+    background-color: $primary;
+    
+}
+
+.pp {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: 1;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        font-size: 1.2rem;
+        li {
+            a {
+                text-decoration: none;
+                color: white;
+                margin: 10px;
+                text-shadow: 2px 4px 10px black;
+                &:hover {
+                    color: $primary;
+                    text-decoration: underline;
+                    text-shadow: 2px 4px 20px black;
+                }
+            }
+        }
+    }
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    background-image: url("photo-couverture-nature.jpg");
+    background-size: cover;
+    background-position: bottom;
+    h1 {
+        font-size: 50px;
+        margin-bottom: 5px;
+        z-index: 1;
+    }
+    p {
+        color: white;
+        font-size: 20px;
+        margin-top: 5px;
+        z-index: 1;
+    }
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+    }
+}
+
+footer {
+	width: 100%;
+	height: 50px;
+	background: black;
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.construction {
+    margin: 50px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
