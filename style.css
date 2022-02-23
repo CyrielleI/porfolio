@@ -61,15 +61,22 @@ h3 {
 .section1 .container .right button {
   border: solid 1px #fb5d55;
   background: #1e2233;
-  color: #fb5d55;
   width: 30%;
   border-radius: 5px;
   height: 30px;
   transition: all ease-in-out 0.3s;
+  text-decoration: none;
 }
 .section1 .container .right button:hover {
   border: none;
   background: #fb5d55;
+  color: white;
+}
+.section1 .container .right button a {
+  text-decoration: none;
+  color: #fb5d55;
+}
+.section1 .container .right button a:hover {
   color: white;
 }
 .section1 .container .right p {

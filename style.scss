@@ -74,10 +74,18 @@ h3 {
                 border-radius: 5px;
                 height: 30px;
                 transition: all ease-in-out 0.3s;
+                text-decoration: none;
                 &:hover {
                     border: none;
                     background: $primary;
                     color: white;
+                 }
+                a {
+                     text-decoration: none;
+                     color: #fb5d55;
+                     &:hover {
+                         color: white;
+                     }
                 }
             }
             p {
